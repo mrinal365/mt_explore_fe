@@ -1,4 +1,3 @@
-import Feed from '@/pages/feed/Feed'
 import React from 'react'
 
 type Props = {}
@@ -6,7 +5,7 @@ type Props = {}
 const page = (props: Props) => {
   return (
     <div>
-      <Feed />
+      <p className='text-xl'>Travel</p>
     </div>
   )
 }
