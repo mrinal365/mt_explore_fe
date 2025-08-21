@@ -25,10 +25,24 @@
   font-family: Arial, Helvetica, sans-serif;
 } */
 
-.bg1{
-  background-image:url('/app/bg1.jpg');
+.bg1 {
+  background-image: url('/app/bg1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   /* background: #000; */
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+    /* For Chrome, Safari, Edge */
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    /* For IE and Edge */
+    scrollbar-width: none;
+    /* For Firefox */
+  }
 }

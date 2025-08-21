@@ -9,18 +9,20 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
   return (
-    <html lang="en" className="h-[100vh]">
-      <body className="flex bg-[#FAFAFA]">
-        <div className="fixed left-0 top-0">
-          <Sidebar />
-        </div>
-        <div className='bg-[#FAFAFA] w-[100%] px-[300px]  text-black'>
-          <div className='-200 px-4 pt-6'>
-            {children}
+    <html lang="en" className="flex 2xl:justify-center max-w-[100vw] w-[100vw]">
+      <body className="flex bg-[#51964a] justify-center max-h-[100vh] overflow-y-clip">
+        <div className="flex max-w-[1536px] w-[100%] max-h-[100vh] bg-red-400 relative">
+          <div className=" left-0 top-0 static hidden md:block">
+            <Sidebar />
           </div>
-        </div>
-        <div className="fixed right-0 top-0">
-          <RightSidebar />
+          <div className='bg-[#FAFAFA] w-[100%] md:w-[calc(100vw-300px)] 2xl:max-w-[900px]   text-black'>
+            <div className=''>
+              {children}
+            </div>
+          </div>
+          <div className="hidden  2xl:block ">
+            <RightSidebar />
+          </div>
         </div>
       </body>
     </html>
