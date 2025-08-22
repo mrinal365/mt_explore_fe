@@ -68,7 +68,7 @@ const StoryList = (props: Props) => {
         },
     ]
     return (
-        <div className='flex gap-[13px] overflow-x-clip'>
+        <div className='flex gap-[13px] no-scrollbar overflow-x-scroll overflow-y-none py-4'>
             {
                 storyListItems.map((item) => (
                     <Stories key={item.id} storyImage={item.storyImage} profileImage={item.profileImage} seen={item.seen} />

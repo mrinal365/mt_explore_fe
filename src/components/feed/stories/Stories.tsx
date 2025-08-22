@@ -9,12 +9,12 @@ type Props = {
 const Stories = (props: Props) => {
     const { storyImage, profileImage, seen } = props
     return (
-        <div className='bg-[#f76f00] p-[4px] flex justify-center items-center rounded-3xl relative'>
+        <div className=' flex justify-center items-center rounded-[18px] relative'>
             <img   
-                className='min-w-[110px] min-h-[140px] w-[110px] h-[140px] rounded-[18px] border-[4px] border-[#ffffff]' 
+                className='min-w-[90px] min-h-[120px] w-[100px] h-[120px] border-[2px] border-[#000000] rounded-[16px] ' 
                 src={storyImage}
             />
-            <img className='absolute w-[60px] h-[60px] -bottom-[20px] rounded-full border-[4px] border-[#ffffff] object-cover' src={profileImage}/>
+            <img className='absolute w-[40px] h-[40px] -bottom-[20px] rounded-full border-[2px] border-[#ffffff] object-cover' src={profileImage}/>
         </div>
     )
 }

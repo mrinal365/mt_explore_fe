@@ -24,7 +24,7 @@ const SidebarItem = (props: Props) => {
         <li onClick={navigateToPath}>
             <a
                 href="#"
-                className={`group flex items-center justify-between px-6 py-3 ${currentPath === path ? 'bg-gray-200' : ''} hover:bg-gray-200`}
+                className={`group flex items-center justify-between px-6 py-[6px] ${currentPath === path ? 'bg-gray-200' : ''} hover:bg-gray-200`}
             >
                 <div className="flex items-center gap-2">
                     {
