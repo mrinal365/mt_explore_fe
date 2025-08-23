@@ -20,10 +20,6 @@ const Feed = (props: Props) => {
     return (
         <div className='relative overflow-clip'>
             <div className='flex justify-between items-center p'>
-                <p className='text-[24px] font-medium'>Feed</p>
-                <div className='bg-[white] rounded-[18px] min-w-[300px] py-[4px] px-4 border-[1px] border-[#D9D9D9]'>
-                    <input type="text" placeholder='Search' className='outline-none' />
-                </div>
             </div>
             <div className='mt-2'>
                 <StoryList />
